@@ -1,0 +1,34 @@
+header{
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 50px;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    flex: 1fr;
+}
+
+header nav ul li {
+    margin-right: 13px;
+}
+
+header nav ul li:last-child {
+    margin-right: 0px;
+}
+
+.we-design-and-develop {
+    background-image: url("../background/main.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
