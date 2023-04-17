@@ -11,52 +11,67 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/aboutUs.css">
+    <link rel="stylesheet" href="./css/professionalSkillsAndStatistics.css">
+    <link rel="stylesheet" href="./css/ourWorkProcess.css">
 </head>
 <body>
     <header>
         <img class="logo-picture" src="./logo/logo.png" alt="logo">
         <nav class="menu">
             <ul>
-                <li>HOME</li>
-                <li>ABOUT</li>
-                <li>WORK</li>
-                <li>PROCESS</li>
-                <li>SERVICES</li>
-                <li>TESTIMONIALS</li>
-                <li>CONTACT</li>
+                <li><a class="menu-each-element" href="#home">HOME</a></li>
+                <li><a class="menu-each-element" href="#about">ABOUT</a></li>
+                <li><a class="menu-each-element" href="#work">WORK</a></li>
+                <li><a class="menu-each-element" href="#process">PROCESS</a></li>
+                <li><a class="menu-each-element" href="#services">SERVICES</a></li>
+                <li><a class="menu-each-element" href="#testimonials">TESTIMONIALS</a></li>
+                <li><a class="menu-each-element" href="#contact">CONTACT</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="we-design-and-develop">
-            <div>
+        <section id="home" class="we-design-and-develop">
+            <div class="first-column-we-design-and-develop"></div>
+            <div class="second-column-we-design-and-develop">
                 <h2>
-                    We Design and Developer
+                    We Design and Develop
                 </h2>
-                <p>
-                    We are new design studio based in USA. We have over
-                    20 years of combined experience, and know a thing or
-                    two about designing websites and mobile apps.
-                </p>
-                <button>
+                <div class="we-design-and-develop-text">
+                    <p>
+                        We are a new design studio based in USA. We have over
+                        20 years of combined experience, and know a thing or
+                        two about designing websites and mobile apps.
+                    </p>
+                </div>
+                
+                <button class="contact-button">
                     CONTACT US
                 </button>
             </div>
+            <div class="third-column-we-design-and-develop"></div>
         </section>
         
-        <section class="about-us">
-            <div>
+        <section id="about" class="about-us">
+            <div class="first-column-about-us"></div>
+            <div class="second-column-about-us">
                 <h2>
                     About Us
                 </h2>
-                <p>
-                    Divide have don't man wherein air fourth. Own itself
-                    make have night won't make.A you under Seed appear which good give. Own give air
-                    without fowl moveth dry first heaven fruit dominion she'd won't very all.
-                </p>
-                <img src="./img/signature.png" alt="signature">
+                <div class="about-us-text">
+                    <p>
+                        Divide have don't man wherein air fourth. Own itself make have night won't make. 
+                    </p>
+                    <p>
+                        A you under Seed appear which good give. Own give air without fowl moveth dry first heaven fruit dominion she'd won't very all.
+                    </p>
+                </div>
+                
+                <img class="about-us-signature" src="./about us/autograf.png" alt="autograf">
             </div>
+            <div class="third-column-about-us"></div>
         </section>
 
         <section class="professional-skills">
@@ -78,57 +93,97 @@
         </section>
 
         <section class="statistics">
-            <div class="briefcase">
-                <img src="./img/briefcase.png" alt="briefcase">
-                <p>
-                    <span>548</span>
-                    <br>WORKING HOURS
-                </p>
-                
-            </div>
-            <img src="./img/clock.png" alt="clock">
-            <div class="statictics-numbers">
-                548
-                <div class="statistics-text">
-                    PROJECTS COMPLETED
+            <div class="icon-box">
+                <img class="icon" src="./information icon/briefcase.png" alt="briefcase">
+                <div class="icon-box-text">
+                    <div class="statictics-numbers">
+                        548
+                    </div>
+                    <div class="statistics-text">
+                        PROJECTS COMPLETED
+                    </div>
                 </div>
             </div>
-            <img src="./img/star.png" alt="star">
-            <div class="statictics-numbers">
-                612
-                <div class="statistics-text">
-                    POSITIVE FEEDBACK
+            <div class="icon-box">
+                <img class="icon" src="./information icon/clock.png" alt="clock">
+                <div class="icon-box-text">
+                    <div class="statictics-numbers">
+                        1465
+                    </div>
+                    <div class="statistics-text">
+                        WORKING HOURS
+                    </div>
                 </div>
             </div>
-            <img src="./img/heart.png" alt="heart">
-            <div class="statictics-numbers">
-                548
-                <div class="statistics-text">
-                    HAPPY CLIENTS
+            <div class="icon-box">
+                <img class="icon" src="./information icon/star.png" alt="star">
+                <div class="icon-box-text">
+                    <div class="statictics-numbers">
+                        612
+                    </div>
+                    <div class="statistics-text">
+                        POSITIVE FEEDBACK
+                    </div>
+                </div>
+            </div>
+            <div class="icon-box">
+                <img class="icon" src="./information icon/heart.png" alt="heart">
+                <div class="icon-box-text">
+                    <div class="statictics-numbers">
+                        735
+                    </div>
+                    <div class="statistics-text">
+                        HAPPY CLIENTS
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="tiles-with-pictures">
-            <img src="./img/firstTile.png" alt="firstTile">
-            <img src="./img/secondTile.png" alt="secondTile">
-            <img src="./img/thirdTile.png" alt="thirdTile">
-            <img src="./img/fourthTile.png" alt="fourthTile">
-            <img src="./img/fifthTile.png" alt="fifthTile">
-            <img src="./img/sixthTile.png" alt="sixthTile">
-            <img src="./img/seventhTile.png" alt="seventhTile">
-            <img src="./img/eightTile.png" alt="eightTile">
+        <section id="work" class="tiles-with-pictures">
+            <div class="tiles">
+              <div class="tile">
+                <img src="./product icon/firstTile.png" alt="firstTile">
+              </div>
+              <div class="tile">
+                <img src="./product icon/secondTile.png" alt="secondTile">
+              </div>
+              <div class="tile">
+                <img src="./product icon/thirdTile.png" alt="thirdTile">
+              </div>
+              <div class="tile">
+                <img src="./product icon/fourthTile.png" alt="fourthTile">
+              </div>
+              <div class="tile">
+                <img src="./product icon/fifthTile.png" alt="fifthTile">
+              </div>
+              <div class="tile">
+                <img src="./product icon/sixthTile.png" alt="sixthTile">
+              </div>
+              <div class="tile">
+                <img src="./product icon/seventhTile.png" alt="seventhTile">
+              </div>
+              <div class="tile">
+                <img src="./product icon/eightTile.png" alt="eightTile">
+              </div>
+            </div>
             <div class="load-more-work">
-                LOAD MORE WORK
+                <div class="load-more-work-button">
+                    LOAD MORE WORK
+                </div>
             </div>
-        </section>
+          </section>
+          
 
-        <section class="out-work-process">
-            <h2>Our Work Process</h2>
-            <p>Was years it seasons was there from he in in them together over that
-                third sixth gathered female creeping bearing behold years.
-            </p>
-            <p>miejsce na film</p>
+        <section id="process" class="out-work-process">
+            <div class="out-work-process-text">
+                <h2>Our Work Process</h2>
+                <p>Was years it seasons was there from he in in them together over that,
+                    third sixth gathered female creeping bearing behold years.
+                </p>
+            </div>
+            <div class="out-work-process-video">
+                <img src="/background/wideo.png" alt="wideo">
+            </div>
         </section>
 
         <section class="">

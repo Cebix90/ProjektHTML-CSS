@@ -1,0 +1,40 @@
+.about-us {
+    margin-top: 50px;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.first-column-about-us{
+    display: flex;
+    flex: 1;
+}
+
+.second-column-about-us {
+    display: flex;
+    width: 610px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us h2 {
+    font-size: 27px;
+    font-weight: 500;
+} 
+
+.about-us-text {
+    color: rgb(150, 149, 149);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.about-us-signature {
+    width:min-content;
+}
+
+.third-column-about-us{
+    display: flex;
+    flex: 1;
+}
