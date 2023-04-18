@@ -45,7 +45,7 @@ header nav ul li:last-child {
 }
 
 .we-design-and-develop {
-    margin-top: 51px;
+    margin-top: 50px;
     background-image: url("../background/main.jpg");
     height: 100vh;
     background-position: center;
@@ -60,6 +60,12 @@ header nav ul li:last-child {
     
     display: flex;
     flex: 6;
+}
+
+@media (max-width: 500px) {
+  .first-column-we-design-and-develop {
+    flex: 1;
+  }
 }
 
 .second-column-we-design-and-develop {
@@ -96,75 +102,13 @@ header nav ul li:last-child {
     width: 146px;
     height: 40px;
     cursor: pointer;
-    transition: opacity 0.15s;
+    transition: opacity 0.15s, box-shadow 0.15s;
+    
 }
 
 .contact-button:hover {
-    opacity: 0.6;
+    opacity: 0.8;
+    box-shadow: 5px 5px 5px rgb(0,0,0,0.15);
 }
 
-.tiles-with-pictures {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .tiles {
-    height: 90vh;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .tile {
-    flex-basis: calc(25% - 16px);
-    margin-right: 16px;
-    margin-bottom: 40px;
-    display: flex;
-    flex: 1f;
-    justify-content: center;
-  }
-  
-  .tile:last-child {
-    margin-right: 0;
-  }
-  
-  @media (max-width: 999px) {
-    .tile {
-      flex-basis: calc(33.33% - 16px);
-    }
-  }
-  
-  @media (max-width: 750px) {
-    .tile {
-      flex-basis: calc(50% - 16px);
-    }
-  }
-  
-  @media (max-width: 500px) {
-    .tiles {
-      flex-wrap: nowrap;
-    }
-    .tile {
-      flex-basis: calc(33.33% - 16px);
-    }
-  }
-  
-  .load-more-work {
-    font-size: 13px;
-    font-weight: 500;
-    color: rgb(151, 151, 151);;
-    background-color: rgb(245, 245, 245);
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
-  .load-more-work-button {
-    cursor: pointer;
-  }

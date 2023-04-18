@@ -1,0 +1,41 @@
+.contact {
+    padding-top: 50px;
+    background-color: rgb(245, 245, 245);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+.contact-text h2 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.contact-text p {
+    color: rgb(150, 149, 149);
+    font-size: 15px;
+    font-weight: 500;
+    width: 500px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.contact-input {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    align-items: center;
+}
+
+.search-bar {
+    border: none;
+}

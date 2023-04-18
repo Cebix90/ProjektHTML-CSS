@@ -5,7 +5,56 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 70px;
 }
+
+.professional-skills h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.name-and-percentage-of-skill {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.skill_inner{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .skill{
+    width: 30%;
+    height: 3px;
+    position: absolute;
+    background-color: rgb(225, 225, 225);
+    transition: transform  .3s .1s ease-in-out;
+    margin-top: 10px;
+  }
+
+  .skill_inner_line{
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    background-color: #10c9c3;
+  }
+
+  .skill_inner:nth-child(1) .skill_inner_line {
+    width: 75%;
+  }
+  
+  .skill_inner:nth-child(2) .skill_inner_line {
+    width: 90%;
+  }
+  
+  .skill_inner:nth-child(3) .skill_inner_line {
+    width: 65%;
+  }
 
 .statistics {
     height: 23vh;
