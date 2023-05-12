@@ -60,12 +60,6 @@
     width: 250px;
 }
 
-@media only screen and (min-width: 768px) {
-    .user-data-input .search-bar {
-        width: 290px;
-    }
-  }
-
 .title-input {
     margin-bottom: 20px;
 }
@@ -74,12 +68,6 @@
     height: 40px;
     width: 540px;
 }
-
-@media only screen and (min-width: 768px) {
-    .title-input .search-bar {
-        width: 620px;
-    }
-  }
 
 .comment-input {
     margin-bottom: 20px;
@@ -91,11 +79,18 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .user-data-input .search-bar {
+        width: 290px;
+    }
+    .title-input .search-bar {
+        width: 620px;
+    }
     .comment-input .search-bar {
         width: 620px;
     }
   }
 
+  
   .send-message-button {
     font-size: 10px;
     color: white;
