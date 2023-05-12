@@ -11,11 +11,17 @@
 .cite cite {
     font-size: 20px;
     font-weight: 500;
-    width: 650px;
+    width: 500px;
     text-align: center;
     line-height: 30px;
     margin-bottom: 30px;
 }
+
+@media only screen and (min-width: 768px) {
+    .cite cite {
+        width: 650px;
+    }
+} 
 
 .cite p {
     font-size: 12px;

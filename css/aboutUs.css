@@ -4,26 +4,28 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
-.first-column-about-us{
+.text-about-us {
     display: flex;
-    flex: 1;
-}
-
-.second-column-about-us {
-    display: flex;
-    width: 610px;
+    width: 550px;
     flex-direction: column;
     align-items: center;
 }
 
-.about-us h2 {
+@media only screen and (min-width: 768px) {
+    .text-about-us {
+        width: 610px;
+    }
+} 
+
+.text-about-us h2 {
     font-size: 27px;
     font-weight: 500;
 } 
 
-.about-us-text {
+.about-us-paragraphs {
     color: rgb(150, 149, 149);
     margin-top: 30px;
     margin-bottom: 30px;
@@ -32,9 +34,4 @@
 
 .about-us-signature {
     width:min-content;
-}
-
-.third-column-about-us{
-    display: flex;
-    flex: 1;
 }

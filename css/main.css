@@ -54,26 +54,36 @@ header nav ul li:last-child {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .first-column-we-design-and-develop {
-    
     display: flex;
-    flex: 6;
+    flex: 0;
 }
 
-@media (max-width: 500px) {
-  .first-column-we-design-and-develop {
-    flex: 1;
-  }
-}
+@media only screen and (min-width: 992px) {
+    .first-column-we-design-and-develop {
+        display: flex;
+        flex: 6;
+    }
+} 
 
 .second-column-we-design-and-develop {
     display: flex;
     flex-direction: column;
     width: 386px;
-    align-items: left;
+    align-items: center;
 }
+
+@media only screen and (min-width: 992px) {
+    .second-column-we-design-and-develop {
+        display: flex;
+        flex-direction: column;
+        width: 386px;
+        align-items: left;
+    }
+} 
 
 .second-column-we-design-and-develop h2 {
     font-size: 35px;
@@ -91,8 +101,16 @@ header nav ul li:last-child {
 .third-column-we-design-and-develop {
     
     display: flex;
-    flex: 1;
+    flex: 0;
 }
+
+@media only screen and (min-width: 992px) {
+    .third-column-we-design-and-develop {
+    
+        display: flex;
+        flex: 1;
+    }
+} 
 
 .contact-button {
     font-size: 10px;

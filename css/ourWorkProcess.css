@@ -13,23 +13,23 @@
     width: 520px;
     justify-content: center;
     text-align: center;
+    line-height: 20px;
+
 }
 
-.out-work-process h2 {
+.out-work-process-text h2 {
     font-size: 27px;
     font-weight: 500;
     margin-bottom: 30px;
 }
 
-.out-work-process p {
+.out-work-process-text p {
     color: rgb(150, 149, 149);
 }
 
 .out-work-process-video {
     margin-top: -30px;
     display: flex;
-    max-width: 100%;
-    height: auto;
+    height: 75%;
     padding-bottom: 50px;
-    text-align: center;
 }

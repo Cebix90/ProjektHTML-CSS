@@ -30,18 +30,38 @@
     position: relative;
   }
 
+  .tile .tile-hover{
+  	position:absolute;
+  	width:100%;
+  	height:100%;
+  	background-color:rgba(0,0,0,0.7);
+  	 display: flex;
+    align-items: center; 
+    justify-content: center; 
+    transition: opacity 0.15s;
+    	opacity:0;
+  }
+
+  .tile:hover .tile-hover {
+    opacity:1;
+      }
+
   .tile:hover .bottom-image{
     /* transform: scale(1.09); */
     opacity: 0.9;
     height: 226px;
-    width: 326px;
+    width: 226px;
+    background-color: black;
   }
 
   .top-image {
     z-index: 0;
+display: block;
+height: 75%;
+padding-top: 27px;
+padding-bottom: 27px;
   }
-
-
+  
   .bottom-image {
     position: absolute;
     opacity: 0;
@@ -52,15 +72,18 @@
 
   .bottom-image:hover {
     z-index: 1;
+    background-color: black;
   }
 
   
   .tiles:nth-child(even) .tile:nth-child(even) {
     background-color: rgb(225, 225, 225);
+    z-index: 0;
   }
 
   .tiles:nth-child(odd) .tile:nth-child(odd) {
     background-color: rgb(225, 225, 225);
+    z-index: 0;
   }
   
   @media (max-width: 999px) {

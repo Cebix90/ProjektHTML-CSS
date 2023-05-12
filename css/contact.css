@@ -37,5 +37,78 @@
 }
 
 .search-bar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
     border: none;
+    padding-left: 15px;
+}
+
+.user-data-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.user-data-input .search-bar:first-child {
+    margin-right: 22px;
+}
+
+.user-data-input .search-bar {
+    height: 40px;
+    width: 250px;
+}
+
+@media only screen and (min-width: 768px) {
+    .user-data-input .search-bar {
+        width: 290px;
+    }
+  }
+
+.title-input {
+    margin-bottom: 20px;
+}
+
+.title-input .search-bar {
+    height: 40px;
+    width: 540px;
+}
+
+@media only screen and (min-width: 768px) {
+    .title-input .search-bar {
+        width: 620px;
+    }
+  }
+
+.comment-input {
+    margin-bottom: 20px;
+}
+
+.comment-input .search-bar {
+    height: 150px;
+    width: 540px;
+}
+
+@media only screen and (min-width: 768px) {
+    .comment-input .search-bar {
+        width: 620px;
+    }
+  }
+
+  .send-message-button {
+    font-size: 10px;
+    color: white;
+    background-color: rgb(0, 199, 199);
+    border: none;
+    width: 146px;
+    height: 40px;
+    cursor: pointer;
+    transition: opacity 0.15s, box-shadow 0.15s;
+    
+}
+
+.send-message-button:hover {
+    opacity: 0.8;
+    box-shadow: 5px 5px 5px rgb(0,0,0,0.15);
 }
