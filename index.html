@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./css/skills.css">
     <link rel="stylesheet" href="./css/citeAndLogos.css">
     <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
     <header>
@@ -51,7 +52,7 @@
                     </p>
                 </div>
                 
-                <button class="contact-button">
+                <button class="contact-button" onclick="window.location.href='#contact'">
                     CONTACT US
                 </button>
             </div>
@@ -153,40 +154,37 @@
 
         <section id="work" class="tiles-with-pictures">
             <div class="tiles">
-              <div class="tile">
-                <img class="top-image" src="./product icon/firstTile.png" alt="firstTile">
-                <div class="tile-hover"><img src="./product icon/eye.png" alt="eye"></div>
-              </div>
-              <div class="tile">
-                <img class="top-image" src="./product icon/secondTile.png" alt="secondTile">
-                <div class="tile-hover"><img src="./product icon/eye.png" alt="eye"></div>
-              </div>
-              <div class="tile">
-                <img class="top-image" src="./product icon/thirdTile.png" alt="thirdTile">
-                <div class="tile-hover"><img src="./product icon/eye.png" alt="eye"></div>
-              </div>
-              <div class="tile">
-                <img class="top-image" src="./product icon/fourthTile.png" alt="fourthTile">
-                <div class="tile-hover"><img src="./product icon/eye.png" alt="eye"></div>
-              </div>
-            </div>
-            <div class="tiles">
+                <div class="tile">
+                    <img class="top-image" src="./product icon/firstTile.png" alt="firstTile">
+                    <div class="tile-hover"><img src="./product icon/eye.png" alt="eye"></div>
+                </div>
+                <div class="tile">
+                    <img class="top-image" src="./product icon/secondTile.png" alt="secondTile">
+                    <div class="tile-hover"><img src="./product icon/eye.png" alt="eye"></div>
+                </div><div class="tile">
+                    <img class="top-image" src="./product icon/thirdTile.png" alt="thirdTile">
+                    <div class="tile-hover"><img src="./product icon/eye.png" alt="eye"></div>
+                </div>
+                <div class="tile">
+                    <img class="top-image" src="./product icon/fourthTile.png" alt="fourthTile">
+                    <div class="tile-hover"><img src="./product icon/eye.png" alt="eye"></div>
+                </div>
                 <div class="tile">
                     <img class="top-image" src="./product icon/fifthTile.png" alt="fifthTile">
                     <div class="tile-hover"><img src="./product icon/eye.png" alt="eye"></div>
-                  </div>
-                  <div class="tile">
+                </div>
+                <div class="tile">
                     <img class="top-image" src="./product icon/sixthTile.png" alt="sixthTile">
                     <div class="tile-hover"><img src="./product icon/eye.png" alt="eye"></div>
-                  </div>
-                  <div class="tile">
+                </div>
+                <div class="tile">
                     <img class="top-image" src="./product icon/seventhTile.png" alt="seventhTile">
                     <div class="tile-hover"><img src="./product icon/eye.png" alt="eye"></div>
-                  </div>
-                  <div class="tile">
+                </div>
+                <div class="tile">
                     <img class="top-image" src="./product icon/eightTile.png" alt="eightTile">
                     <div class="tile-hover"><img src="./product icon/eye.png" alt="eye"></div>
-                  </div>
+                </div>
             </div>
             <div class="load-more-work">
                 <div class="load-more-work-button">
@@ -208,7 +206,7 @@
             </div>
         </section>
 
-        <section class="skills">
+        <section id="services" class="skills">
             <div class="skills-box">
                 <img src="./skills icon/design Icon.png" alt="firstTile">
                 <H2>UI / UX DESIGN</H2>
@@ -267,7 +265,7 @@
             </div>
         </section>
 
-        <section class="cite">
+        <section id="testimonials" class="cite">
             <cite>
                 "Outstanding job and exceeded all expectations. It was a pleasure
                 to worki with them on sizable first project and am looking forward
@@ -308,30 +306,35 @@
             </div>
             <div class="contact-input">
                 <div class="user-data-input">
-                    <input class="search-bar" type="text" placeholder="Your Name">
-                    <input class="search-bar" type="text" placeholder="Your Email">
+                    <input type="text" name="contact-input-name" id="" placeholder="Your Name">
+                    <input type="email" name="contact-input-email" id="" placeholder="Your Email">
                 </div>
                 <div class="title-input">
-                    <input class="search-bar" type="text" placeholder="Your Title">
+                    <input type="text" name="contact-input-title" id="" placeholder="Your Title">
                 </div>
                 <div class="comment-input">
-                    <input class="search-bar" type="text" placeholder="Your Comment">
+                    <textarea type="text" placeholder="Your Comment"></textarea>
                 </div>
                 <button class="send-message-button">
                     SEND MESSAGE
                 </button>
             </div>
         </section>
-
-        <footer>
-            <h2>Pirll Design. Inc.</h2>
+    </main>
+    <footer>
+        <div class="company-name">
+            <h2>Piroll Design. Inc.</h2>
             <p>© 2017 Piroll. All rights reserved.
                 <br>Designed by robirurk.
             </p>
+        </div>
+        <div class="company-contact">
             <p>
                 hello@porolltheme.com
                 <br>+44 987 065 908
             </p>
+        </div>
+        <div class="company-others">
             <ul>
                 <li>Projects</li>
                 <li>About</li>
@@ -350,9 +353,7 @@
                 <li>Instagram</li>
                 <li>Dribbble</li>
             </ul>
-        </footer>
-
-    </main>
-    
+        </div>
+    </footer>
 </body>
 </html>

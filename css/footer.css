@@ -1,0 +1,100 @@
+footer {
+    height: 22vh;
+    background-color: black;
+    color: rgb(151, 151, 151);
+    font-size: 11px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 120px;
+}
+
+footer ul,
+footer p {
+    line-height: 18px;
+}
+
+.company-name {
+    display: flex;
+    flex-direction: column;
+    flex: 35%;
+    align-items: center;
+}
+
+footer h2 {
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-right: 55px;
+    margin-bottom: 20px;
+}
+
+.company-contact {
+    display: flex;
+    flex: 25%;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+.company-others {
+    display: flex;
+    flex-direction: row;
+    flex: 40%;
+}
+
+.company-others ul:nth-child(1),
+.company-others ul:nth-child(2),
+.company-others ul:nth-child(3) {
+    flex: 33.3%;
+}
+
+@media only screen and (min-width: 768px) {
+    .company-others ul:nth-child(1),
+    .company-others ul:nth-child(2),
+    .company-others ul:nth-child(3) {
+    flex: 33%;
+}
+    footer h2 {
+        font-size: 15px;
+        padding-right: 70px;
+    }
+    footer {
+        font-size: 13px;
+    }
+    footer ul,
+    footer p {
+    line-height: 22px;
+}
+  }
+
+  @media only screen and (min-width: 992px) {
+    .company-name {
+        flex: 30%;
+        align-items: center;
+    }
+    
+    .company-contact {
+        flex: 30%;
+        justify-content: center;
+    }
+    
+    .company-others {
+        display: flex;
+        flex-direction: row;
+        flex: 40%;
+    }
+    
+    .company-others ul:nth-child(1),
+    .company-others ul:nth-child(2) {
+        flex: 25%;
+    }
+    
+    .company-others ul:nth-child(3) {
+        display: flex;
+        flex: 50%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+  
