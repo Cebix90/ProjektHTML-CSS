@@ -29,24 +29,43 @@
 }
 
 .logos {
-    height: 20vh;
+    height: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    margin: 0px 30px 0px 30px;
+    margin: 20px 30px 20px 30px;
+    
 }
 
 .each-logo {
     display: flex;
-    flex: 20%;
+    flex: 100%;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .each-logo:last-child {
     display: none;
 }
 
+@media only screen and (min-width: 481px) {
+    .each-logo {
+        flex: 50%
+    }
+} 
+
+@media only screen and (min-width: 769px) {
+    .each-logo {
+        flex: 25%
+    }
+} 
+
 @media only screen and (min-width: 992px) {
+    .each-logo {
+        flex: 20%
+    }
+    
     .each-logo:last-child {
         display: flex;
     }

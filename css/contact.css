@@ -1,7 +1,5 @@
 .contact {
-    padding-top: 50px;
     background-color: rgb(245, 245, 245);
-    height: 80vh;
     display: flex;
     flex-direction: column;
 }
@@ -11,6 +9,7 @@
     flex-direction: column;
     flex: 1;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .contact-text h2 {
@@ -45,6 +44,7 @@
     border: none;
     padding-left: 15px;
     margin-bottom: 20px;
+    resize: none;
 }
 
 .user-data-input input {
@@ -91,6 +91,7 @@
     width: 146px;
     height: 40px;
     cursor: pointer;
+    margin-bottom: 80px;
     transition: opacity 0.15s, box-shadow 0.15s;
     
 }
