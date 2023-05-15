@@ -1,35 +1,69 @@
 .out-work-process {
     background-color: white;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px 0 0 0;
 }
 
 .out-work-process-text {
     display: flex;
     flex-direction: column;
-    height: 300px;
-    width: 520px;
-    justify-content: center;
+    height: 25%;
+    width: 68%;
+    justify-content:end;
     text-align: center;
-    line-height: 20px;
-
 }
 
 .out-work-process-text h2 {
     font-size: 27px;
     font-weight: 500;
-    margin-bottom: 30px;
+    line-height: 30px;
 }
 
 .out-work-process-text p {
     color: rgb(150, 149, 149);
+    line-height: 25px;
 }
 
-.out-work-process-video {
-    margin-top: -30px;
-    display: flex;
-    height: 75%;
-    padding-bottom: 50px;
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+  }
+
+@media only screen and (min-width: 1025px) {
+    .out-work-process {
+        height: 92vh;
+      }
+    
+      .out-work-process-text {
+        width: 520px;
+        padding-top: 30px;
+      }
+    
+      .iframe-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0;
+        height: 100%;
+      }
+    
+      .iframe-container iframe {
+        position: relative;
+        width: 819px;
+        height: 462px; 
+        top:0;
+        left: 0;
+      }
 }

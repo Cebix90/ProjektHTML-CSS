@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Website Project</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
     <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/aboutUs.css">
     <link rel="stylesheet" href="./css/professionalSkillsAndStatistics.css">
@@ -25,7 +25,7 @@
 <body>
     <header id="head">
         <img class="logo-picture" src="./icons/logo.png" alt="logo">
-        <nav class="menu">
+        <nav class="menu nav--active">
             <ul>
                 <li><a class="menu-each-element" href="#home">HOME</a></li>
                 <li><a class="menu-each-element" href="#about">ABOUT</a></li>
@@ -36,7 +36,7 @@
                 <li><a class="menu-each-element" href="#contact">CONTACT</a></li>
             </ul>
         </nav>
-        <button class="hamburger hamburger--active" >
+        <button class="hamburger " >
                 <span class="hamburger_box">
                     <span class="hamburger_inner"></span>
                 </span>
@@ -206,11 +206,11 @@
                     third sixth gathered female creeping bearing behold years.
                 </p>
             </div>
-            <div class="out-work-process-video">
-                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            <div class="iframe-container">
+                <iframe width="819" height="462" src="https://www.youtube.com/embed/B1fH5n4dAGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </section>
-
+        
         <section id="services" class="skills">
             <div class="skills-box">
                 <img src="./icons/designIcon.png" alt="firstTile">
@@ -341,22 +341,22 @@
         </div>
         <div class="company-others">
             <ul>
-                <li>Projects</li>
-                <li>About</li>
-                <li>Services</li>
+                <li><a class="company-others-menu" href="#home">Projects</a></li>
+                <li><a class="company-others-menu" href="#about">About</a></li>
+                <li><a class="company-others-menu" href="#services">Services</a></li>
                 <li>Carreer</li>
             </ul>
             <ul>
                 <li>News</li>
                 <li>Events</li>
-                <li>Contact</li>
+                <li><a class="company-others-menu" href="#contact">Contact</a></li>
                 <li>Legals</li>
             </ul>
             <ul>
-                <li>Facebook</li>
-                <li>Twitter</li>
-                <li>Instagram</li>
-                <li>Dribbble</li>
+                <li><a class="company-others-menu" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                <li><a class="company-others-menu" href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+                <li><a class="company-others-menu" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                <li><a class="company-others-menu" href="https://www.dribbble.com/" target="_blank">Dribbble</a></li>
             </ul>
         </div>
     </footer>

@@ -1,184 +1,6 @@
-header{
-    font-size: 23px;
-    font-weight: 700;
-    background-color: white;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    height: 50px;
-    align-items: center;
-    z-index: 100;
-    height: auto;
-    width: 100%;
-    background-color: white;
-}
-
-header img {
-    align-self: flex-start;
-    margin-top: 20px;
-    margin-left: 50px;
-    padding-bottom: 20px;
-    z-index: 10;
-}
-
-header nav {
-    display: flex;
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    z-index: 5;
-    align-items: center;
-    justify-content: space-around;
-    top: 0;
-    background-color: white;
-    transition: all .2s ease;
-}
-
-header nav ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-header nav ul li{
-    padding-bottom: 30px;
-}
-
-.hamburger{
-    position: relative;
-    width: 50px;
-    display: inline-block;
-    cursor: pointer;
-    background-color: transparent;
-    border: 0;
-    margin: 0;
-    align-self: flex-start;
-    margin-top: 20px;
-    margin-right: 50px;
-    z-index: 10;
-}
-
-.hamburger_box{
-    width: 25px;
-    height: 20px;
-    display: inline-block;
-    position: relative;
-    background: transparent;
-}
-.hamburger_inner{
-    width: 100%;
-    height: 3px;
-    background-color:lightblue ;
-    position: absolute;
-    background-color: #10c9c3;
-     left: 25px;
-     top:50%;
-     transform: translateY(-50%);
-     transition: background-color .3s .1s ease-in-out;
- }
- .hamburger_inner::before,.hamburger_inner::after{
-    width: 100%;
-        height: 3px;
-        background-color:lightblue ;
-        position: absolute;
-        background-color: #10c9c3;
-     content: ' ';
-     left: 0;
-     transition: transform  .3s .1s ease-in-out;
-
- }
- .hamburger ,.menu{
-     transition: transform .3s .1s ease-in-out;
-
- }
- .hamburger--active{
- }
-
- .nav--active{
-    top: -1000px;
- }
-
- .hamburger_inner::after{
-     top: 10px;
- }
- .hamburger_inner::before{
-     top: -10px;
- }
-
- .hamburger--active .hamburger_inner{
-     background-color: transparent;
- }
- .hamburger--active .hamburger_inner::before{
-     transform:translateY(10px) rotate(45deg) ;
-
- }
- .hamburger--active .hamburger_inner::after{
-     transform: translateY(-10px) rotate(-45deg);
-
- }
-
-@media only screen and (min-width: 992px) {
-    header {
-        height: auto;
-        font-size: 13px;
-    }
-
-    header img {
-    align-self: auto;
-    }
-
-     header nav {
-        height: auto;
-        position: static;
-     }
-
-    header nav ul {
-        display: flex;
-        flex-direction: row;
-        flex: 1;
-        list-style-type: none;
-        justify-content: right;
-    }
-
-    header nav ul li{
-        padding-bottom: 0px;
-    }
-    
-    header nav ul li {
-        margin-right: 40px;
-        letter-spacing: 1.5px;
-    }
-
-    header nav ul li:last-child {
-        margin-right: 50px;
-    }
-
-    .hamburger {
-        display: none;
-    }
-  } 
-
-.menu-each-element {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-    transition: color 0.15s;
-}
-
-.menu-each-element:hover {
-    color: rgb(26, 221, 221);
-}
-
 .we-design-and-develop {
     margin-top: 50px;
-    background-image: url("../background/main.jpg");
-    height: 100vh;
+    height: 95vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -186,62 +8,57 @@ header nav ul li{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
+
+.we-design-and-develop::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../background/main.jpg");
+    opacity: 0.3;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
 
 .first-column-we-design-and-develop {
     display: flex;
     flex: 0;
 }
 
-@media only screen and (min-width: 992px) {
-    .first-column-we-design-and-develop {
-        display: flex;
-        flex: 6;
-    }
-} 
-
 .second-column-we-design-and-develop {
     display: flex;
     flex-direction: column;
-    width: 386px;
+    width: 80%;
     align-items: center;
 }
 
-@media only screen and (min-width: 992px) {
-    .second-column-we-design-and-develop {
-        display: flex;
-        flex-direction: column;
-        width: 386px;
-        align-items: left;
-    }
-} 
+.second-column-we-design-and-develop p {
+    text-align: center;
+}
 
 .second-column-we-design-and-develop h2 {
     font-size: 35px;
-    font-weight: 500;
+    margin-bottom: 0px;
+    text-align: center;
 }
 
 .we-design-and-develop-text {
     font-size: 15px;
-    width: 386px;
     color: rgb(150, 149, 149);
     margin-top: 30px;
     margin-bottom: 30px;
+    font-weight: 500;
 }
 
 .third-column-we-design-and-develop {
-    
     display: flex;
     flex: 0;
 }
-
-@media only screen and (min-width: 992px) {
-    .third-column-we-design-and-develop {
-    
-        display: flex;
-        flex: 1;
-    }
-} 
 
 .contact-button {
     font-size: 10px;
@@ -259,3 +76,42 @@ header nav ul li{
     opacity: 0.8;
     box-shadow: 5px 5px 5px rgb(0,0,0,0.15);
 }
+
+@media only screen and (min-width: 481px) {
+    .second-column-we-design-and-develop {
+        width: 386px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .we-design-and-develop {
+        background-image: url("../background/main.jpg");  
+    } 
+
+    .we-design-and-develop::before {
+        display: none;
+    } 
+
+    .first-column-we-design-and-develop {
+        display: flex;
+        flex: 6;
+    }
+
+    .second-column-we-design-and-develop {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .we-design-and-develop-text {
+        font-size: 15px;
+        color: rgb(150, 149, 149);
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .third-column-we-design-and-develop {
+        display: flex;
+        flex: 1;
+    }
+} 

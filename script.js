@@ -19,3 +19,21 @@ const menuHide = () => {
 }
 
 list.forEach(e => e.addEventListener("click", menuHide))
+
+// Dodajemy obsługę kliknięć na linki w menu
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', scrollToSection);
+  });
+  
+  // Funkcja przewijająca stronę do odpowiedniej sekcji z uwzględnieniem offsetu nagłówka
+  function scrollToSection(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+    const headerOffset = document.querySelector('header').offsetHeight;
+    const targetOffsetTop = targetSection.offsetTop - headerOffset;
+    window.scrollTo({
+      top: targetOffsetTop,
+      behavior: 'smooth'
+    });
+  }

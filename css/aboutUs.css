@@ -1,6 +1,5 @@
 .about-us {
-    margin-top: 50px;
-    height: 40vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -9,16 +8,11 @@
 
 .text-about-us {
     display: flex;
-    width: 550px;
+    width: 80%;
     flex-direction: column;
     align-items: center;
+    line-height: 25px;
 }
-
-@media only screen and (min-width: 768px) {
-    .text-about-us {
-        width: 610px;
-    }
-} 
 
 .text-about-us h2 {
     font-size: 27px;
@@ -27,11 +21,21 @@
 
 .about-us-paragraphs {
     color: rgb(150, 149, 149);
-    margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
 }
 
 .about-us-signature {
     width:min-content;
+    margin-bottom: 30px;
 }
+
+@media only screen and (min-width: 769px) {
+    .about-us {
+        height: 37vh;
+    }
+
+    .text-about-us {
+        width: 610px;
+    }
+} 
