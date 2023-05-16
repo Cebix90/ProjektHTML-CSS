@@ -4,6 +4,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 1% 0 1% 0;
 }
 
 .text-about-us {
@@ -31,10 +32,6 @@
 }
 
 @media only screen and (min-width: 769px) {
-    .about-us {
-        height: 37vh;
-    }
-
     .text-about-us {
         width: 610px;
     }
