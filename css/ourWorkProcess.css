@@ -28,6 +28,11 @@
   line-height: 25px;
 }
 
+.out-work-process video {
+    width: 80%;
+    padding: 20px;
+}
+
 .container {
   width:1000px;
 }
